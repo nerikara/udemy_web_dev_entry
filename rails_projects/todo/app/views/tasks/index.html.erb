@@ -1,0 +1,9 @@
+<hi>ToDoアプリ</hi>
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <%= check_box_tag '', '' %>
+      <%= task.title %>
+    </li>
+  <% end %>
+</ul>
